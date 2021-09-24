@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.main, name="home"),
     path('account/', include('account.urls')),
+    path('health/',views.health,name="health"),
     
 ]
