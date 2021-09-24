@@ -56,7 +56,7 @@ ROOT_URLCONF = 'yolowa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['yolowa/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
