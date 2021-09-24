@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="new">
+    <h1>Write your new blogpage</h1>
+    <form action="{% url 'new' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{yform.as_p}}
+        <button type="submit">제출하기</button>
+    </form>
+</div>
+{% endblock %}

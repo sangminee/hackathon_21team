@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for yobj in y_list %}
+{% if yobj.writer == user.username %}
+<div class="main">
+    <h3>{{yobj.title}}</h3>
+    {{yobj.writer}}/
+    {{yobj.summary}}
+    <a href="{% url 'sub' yobj.id %}">...more</a>
+</div>
+{% endif %}
+{% endfor %}
+<a href="{% url 'new' %}">오늘의 다이어리 작성하러 가기></a>
+{% endblock %}

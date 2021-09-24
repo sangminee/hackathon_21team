@@ -21,5 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.main, name="home"),
     path('account/', include('account.urls')),
-    
+    path('health/',views.health,name="health"),
+    path('list/',views.list, name="list"),
+    path('list/<str:id>',views.sub, name="sub"),
+    path('new/', views.new, name="new"),
+    path('edit/<str:id>', views.edit, name="edit"),
+    path('delete/<str:id>', views.delete, name="delete"),
 ]
