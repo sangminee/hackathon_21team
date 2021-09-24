@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'yolowaapp.apps.YolowaappConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
