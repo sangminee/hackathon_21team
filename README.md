@@ -1,7 +1,7 @@
 # hackathon_21team
 명지대_이상민 동덕여대_정재운 숭실대_최한나
-<br>
-YOLOWA 서비스는
+
+**YOLOWA 서비스는**
 
 1.현재 자신의 행복을 위해 소비를 하고자 할 때
 
@@ -13,4 +13,4 @@ YOLOWA 서비스는
 <br>
 
 
-개발언어: html/CSS/python/Django
+**개발언어**: html/CSS/python/Django
