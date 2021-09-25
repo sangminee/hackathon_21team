@@ -154,10 +154,16 @@
       <li id="base_ii"><a class="base_bar" href="{%url 'list'%}">다이어리</a></li>
     </ul>
   </div>
-  {% endif %}
   <br><br>
+  {% endif %}
 
   <main>
+  {%load static %}
+
+    <style>
+        #first{ margin-left: auto; margin-right: auto;}
+    </style>
+
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -166,50 +172,54 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      
+      <!-- 첫번째 -->
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-          </svg>
-
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="first">
+            <svg><img alt="first" src="{% static 'img/yolowa_1_modify.png' %}">
+              <rect width="100%" height="100%" fill="#777" />
+            </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="{%url 'explanation' %}">욜로와란?</a></p>
+              <h1> What is Yolowa?</h1>
+              <p> Press the button below! </p>
+              <p><a class="btn btn-lg btn-primary" href="{%url 'explanation' %}"> click </a></p>
             </div>
           </div>
         </div>
+
+        <!-- 두번째 -->
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg><img alt="first" src="{% static 'img/yolowa_2_modify.png' %}">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <h1> To log in. </h1>
+              <p> Press the button below! </p>
+              <p><a class="btn btn-lg btn-primary" href="{%url 'login' %}"> click </a></p>
             </div>
           </div>
         </div>
+        
+        <!-- 세번째 -->
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg><img alt="first" src="{% static 'img/yolowa_3_modify.png' %}">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <h1> Sign up for membership. </h1>
+              <p>  Press the button below!  </p>
+              <p><a class="btn btn-lg btn-primary" href="{%url 'signup' %}"> click </a></p>
             </div>
           </div>
+    
         </div>
       </div>
+
+      <!--button-->
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -219,6 +229,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    
+    <!-- 마지막 -->
     <div class="container marketing">
       <hr class="featurette-divider">
 
@@ -230,12 +242,18 @@
             here.</p>
         </div>
         <div class="col-md-5">
+          <svg><img alt="first" src="{% static 'img/travel_md_tab05_01.jpg' %}">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <!--
           <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
             height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
             preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
           </svg>
+        -->
 
         </div>
       </div>
