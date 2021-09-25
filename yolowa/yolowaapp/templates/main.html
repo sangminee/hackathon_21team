@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -27,8 +27,31 @@
   <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#7952b3">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 
   <style>
+    #M{width: auto; height:auto; margin-left:auto; margin-right: auto; }
+      .Name{text-align: center;color:black; text-decoration: none;}
+
+      #nav { font-family: 'Nanum Myeongjo', serif;
+            width: auto; height:auto; margin-left:auto; margin-right: auto;}
+
+      #header {font-family: 'Nanum Myeongjo', serif;
+              width: auto; height:auto; margin-left:auto; margin-right: auto; 
+              font-size:32px;  text-align: center;}
+      
+      #n1{display: flex;}
+      #n2 {display: flex;}
+      li {list-style-type: none;}
+      h1{font-family: 'Gugi', cursive;}
+      .bar {color:black; text-decoration: none; display:block; padding: 0px 18px;}
+
+      #mainDocument {font-family: 'Nanum Myeongjo', serif;
+                    text-align: center; background-color: #cad9e2;}
+
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -46,39 +69,30 @@
 </head>
 
 <body class="pt-5">
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="{%url 'home'%}">Yolowa</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            {% if not user.is_authenticated %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'login' %}">로그인</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'signup' %}">회원가입</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'list' %}">다이어리</a>
-            </li>
-            {% endif %}
-            {% if user.is_authenticated %}
-            <li><a class="dropdown-item" href="#">여행</a></li>
-            <li><a class="dropdown-item" href="{%url 'health'%}">건강</a></li>
-            <li><a class="dropdown-item" href="#">금융</a></li>
-            <li><a class="dropdown-item" href="#">쇼핑</a></li>
-            <li><a class="dropdown-item" href="{% url 'logout' %}">LOGOUT</a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<div id="M">
+      
+      <a class= "Name" href="{%url 'home'%}"><h1>욜로와</h1></a>
+    </div>
+
+    <div id="nav">
+      <ul id="n1" class="nav justify-content-end">
+        <li><a class= "bar" href="{%url 'home'%}">Home</a></li>
+        |
+        <li><a class= "bar" href="{% url 'login' %}">로그인</a></li>
+        |
+        <li><a class= "bar" href="{% url 'signup' %}">회원가입</a></li>
+      </ui>
+    </div>  
+
+    <div id="header">
+      <ul id="n2" class="nav justify-content-center">
+        <li><a class= "bar" href="#">여행</a></li>
+        <li><a class= "bar" href="{%url 'health'%}">건강</a></li>
+        <li><a class= "bar" href="#">금융</a></li>
+        <li><a class= "bar" href="#">쇼핑</a></li>
+      </ui>
+    </div>
+    <br><br>
 
   <main>
 
