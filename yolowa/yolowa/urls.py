@@ -29,6 +29,7 @@ urlpatterns = [
     path('new/', views.new, name="new"),
     path('edit/<str:id>', views.edit, name="edit"),
     path('delete/<str:id>', views.delete, name="delete"),
+<<<<<<< HEAD
     path('americas/',views.americas,name='americas'),
     path('asia/',views.asia,name='asia'),
     path('southEastAsia/',views.southEastAsia,name='southEastAsia'),
@@ -39,3 +40,8 @@ urlpatterns = [
     path('culture/',views.culture,name='culture'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+=======
+    path('explanation/', views.explanation, name="explanation"),
+]
+    
+>>>>>>> 0c58ab2ff34fac0527f2b8454ebd90035dad7675
