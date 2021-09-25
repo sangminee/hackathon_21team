@@ -48,3 +48,6 @@ def delete(request, id):
     ydelete = Yolowaapp.objects.get(id = id)
     ydelete.delete()
     return redirect('home')
+
+def explanation(request):
+    return render(request, 'explanation.html')
