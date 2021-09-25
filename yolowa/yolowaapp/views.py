@@ -3,6 +3,7 @@ from .models import Yolowaapp
 from django.utils import timezone
 from .forms import YolowaappForm
 
+
 # Create your views here.
 def main(request):
     return render(request,'main.html')
@@ -17,6 +18,30 @@ def list(request):
 def sub(request,id):
     y_sub=get_object_or_404(Yolowaapp, pk=id)
     return render(request, 'sub.html', {'y_sub':y_sub})
+
+def americas(request):
+    return render(request, 'Americas.html')
+
+def asia(request):
+    return render(request, 'Asia.html')
+
+def southEastAsia(request):
+    return render(request, 'South-East_Asia.html')
+
+def southPacific(request):
+    return render(request, 'SouthPacific.html')
+
+def europe(request):
+    return render(request, 'Europe.html')
+
+def travel(request):
+    return render(request, 'travel.html')
+
+def golf(request):
+    return render(request, 'golf.html')
+
+def culture(request):
+    return render(request, 'culture.html')
 
 def new(request):
     if request.method =='POST':
