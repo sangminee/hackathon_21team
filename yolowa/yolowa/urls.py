@@ -37,8 +37,5 @@ urlpatterns = [
     path('travel/',views.travel,name='travel'),
     path('golf/',views.golf,name='golf'),
     path('culture/',views.culture,name='culture'),
-]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
     path('explanation/', views.explanation, name="explanation"),
-]
-    
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

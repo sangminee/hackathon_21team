@@ -78,6 +78,60 @@
       text-align: center;
       background-color: #cad9e2;
     }
+    #base_M {
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .base_Name {
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    #base_nav {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #base_header {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    #base_n1 {
+      display: flex;
+    }
+
+    #base_n2 {
+      display: flex;
+    }
+
+    #base_ii {
+      list-style-type: none;
+    }
+
+    #base_h1 {
+      font-family: 'Gugi', cursive;
+    }
+
+    .base_bar {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 0px 18px;
+    }
+
   </style>
 
 </head>
@@ -90,25 +144,33 @@
     </a>
   </div>
 
-  <div id="nav">
-    <ul id="n1" class="nav justify-content-end">
+  {% if not user.is_authenticated %}
+  <div id="base_nav">
+    <ul id="base_n1" class="nav justify-content-end">
 
-    {% if not user.is_authenticated %}
-    <li><a class="bar" href="{%url 'home'%}">Home</a></li>
-    |
-    <li><a class="bar" href="{% url 'login' %}">로그인</a></li>
-    |
-    <li><a class="bar" href="{% url 'signup' %}">회원가입</a></li>
-    {% endif %}
-   </ul>
+      <li id="base_ii"><a class="base_bar" href="{%url 'home'%}">Home</a></li>
+      |
+      <li id="base_ii"><a class="base_bar" href="{% url 'login' %}">로그인</a></li>
+      |
+      <li id="base_ii"><a class="base_bar" href="{% url 'signup' %}">회원가입</a></li>
+    </ul>
   </div>
-  
+
+  <div id="base_header">
+    <ul id="base_n2" class="nav justify-content-center">
+      <li id="base_ii"><a class="base_bar" href="#">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
+      <li id="base_ii"><a class="base_bar" href="#">금융</a></li>
+    </ul>
+  </div>
+  {% endif %}
+
   {% if user.is_authenticated %}
-  <div id="header">
-    <ul id="n2" class="nav justify-content-center">
-      <li><a class="bar" href="#">여행</a></li>
-      <li><a class="bar" href="{%url 'health'%}">건강</a></li>
-      <li><a class="bar" href="#">금융</a></li>
+  <div id="base_header">
+    <ul id="base_n2" class="nav justify-content-center">
+      <li id="base_ii"><a class="base_bar" href="#">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
+      <li id="base_ii"><a class="base_bar" href="#">금융</a></li>
       <li><a class="bar" href="{%url 'list'%}">다이어리</a></li>
     </ul>
   </div>
