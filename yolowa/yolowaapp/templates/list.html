@@ -1,5 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
+<br>
+<a href="{% url 'new' %}">오늘의 다이어리 작성하러 가기></a>
+<style>
+    .main {
+        text-align: center;
+        display: inline-block;
+        color: black;
+        width: 300px;
+        height: 380px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        left: 10%;
+        right: 10%;
+        position: relative;
+        padding-top: 10px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+</style>
+
 {% for yobj in y_list %}
 {% if yobj.writer == user.username %}
 <div class="main">
@@ -10,5 +30,5 @@
 </div>
 {% endif %}
 {% endfor %}
-<a href="{% url 'new' %}">오늘의 다이어리 작성하러 가기></a>
+<br><br>
 {% endblock %}
