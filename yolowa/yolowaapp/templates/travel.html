@@ -2,6 +2,9 @@
 {% block content %}
 
   {% load static %}
+  <link href="{% static 'css/card.css' %}" rel="stylesheet" type="text/css" />
+<script src="./travel.js"> </script>
+
   <div class="top_btnarea clear">
     <h3 class="title_sub2">제휴카드혜택</h3>
     <!-- <a class="btn_common" href="/app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0400000017&amp;mFocus=Benefit">더보기</a> -->
@@ -19,7 +22,7 @@
         <!--// start: 여행 카드 리스트 //-->
         <ul class="card_list" id="benefitCard01">
             <li>
-                <a class="thumb_card" href="{% url 'https://www.shinhancard.com/conts/person/card_info/dream/credit/food/1274972_46594.jsp' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="YoloCard_Tasty" src="{% static 'img/YoloCard_Tasty.png' %}"></span>
                     <dl>
                         <dt>YOLO Tasty카드</dt>
@@ -28,7 +31,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'https://card-gorilla.com/card/detail/211' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="삼성카드taptap" src="{% static 'img/taptapcard.png' %}"></span>
                     <dl>
                         <dt>삼성카드 taptap0</dt>
@@ -37,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'https://paybooc.co.kr/app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000003&mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="K-first카드" src="{% static 'img/K-first 카드.jpg' %}"></span>
                     <dl>
                         <dt>K-first카드</dt>
@@ -51,7 +54,7 @@
         <!--// start: 골프 카드 리스트 //-->
         <ul class="card_list" id="benefitCard02" style="display: none;">
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000011&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="IBK APT프리미엄 카드" src="{% static 'img/partnercard_t11_g10.jpg' %}"></span>
                     <dl>
                         <dt>IBK APT프리미엄 카드</dt>
@@ -60,7 +63,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000036&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="한화 FP family 카드" src="{% static 'img/partnercard_g02_c02.jpg' %}"></span>
                     <dl>
                         <dt>한화 FP family 카드</dt>
@@ -69,7 +72,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000010&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="경남은행 Family Card" src="{% static 'img/partnercard_t10_g09.jpg' %}"></span>
                     <dl>
                         <dt>경남은행 Family Card</dt>
@@ -83,7 +86,7 @@
         <!--// start: 문화 카드 리스트 //-->
         <ul class="card_list" id="benefitCard03" style="display: none;">
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000009&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="하나 내맘대로 카드" src="{% static 'img/partnercard_t09_g08_c05.jpg' %}"></span>
                     <dl>
                         <dt>하나 내맘대로 카드</dt>
@@ -92,7 +95,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000007&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="JB전북은행 시그니처 카드" src="{% static 'img/partnercard_t07_g05_c04.jpg' %}"></span>
                     <dl>
                         <dt>JB전북은행 시그니처 카드</dt>
@@ -101,7 +104,7 @@
                 </a>
             </li>
             <li>
-                <a class="thumb_card" href="{% url 'app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0401000041&amp;mFocus=Benefit' %}">
+                <a class="thumb_card" href="#">
                     <span class="cardimg"><img alt="현대 Family 카드" src="{% static 'img/partnercard_c01.jpg' %}"></span>
                     <dl>
                         <dt>현대 Family 카드</dt>

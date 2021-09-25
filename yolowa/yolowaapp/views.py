@@ -26,7 +26,7 @@ def asia(request):
     return render(request, 'Asia.html')
 
 def southEastAsia(request):
-    return render(request, 'South-East_Asia.html')
+    return render(request, 'southEastAsia.html')
 
 def southPacific(request):
     return render(request, 'SouthPacific.html')
