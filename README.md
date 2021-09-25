@@ -14,7 +14,7 @@
 
 
 **개발언어**: html/CSS/python/Django
-
+<br><br>
 ![KakaoTalk_20210925_220044102](https://user-images.githubusercontent.com/81500474/134772507-ccbffadb-b133-4091-ac0d-25309bd69001.jpg)
 ![KakaoTalk_20210925_220044102_02](https://user-images.githubusercontent.com/81500474/134772528-2c731e20-5302-43eb-8820-0ee32b0e10db.jpg)
 ![KakaoTalk_20210925_220044102_05](https://user-images.githubusercontent.com/81500474/134772529-ef4ac01d-70c1-48be-a701-050bc64401f3.jpg)
