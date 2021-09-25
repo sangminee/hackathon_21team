@@ -158,20 +158,25 @@
 
   <div id="base_header">
     <ul id="base_n2" class="nav justify-content-center">
-      <li id="base_ii"><a class="base_bar" href="#">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'southEastAsia'%}">여행</a></li>
       <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
-      <li id="base_ii"><a class="base_bar" href="#">금융</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'travel'%}">금융</a></li>
     </ul>
   </div>
   {% endif %}
 
   {% if user.is_authenticated %}
+  <div id="base_nav">
+    <ul id="base_n1" class="nav justify-content-end">
+      <li id="base_ii"><a class="base_bar" href="{% url 'logout' %}">로그아웃</a></li>
+    </ul>
+  </div>
   <div id="base_header">
     <ul id="base_n2" class="nav justify-content-center">
-      <li id="base_ii"><a class="base_bar" href="#">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'southEastAsia'%}">여행</a></li>
       <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
-      <li id="base_ii"><a class="base_bar" href="#">금융</a></li>
-      <li><a class="bar" href="{%url 'list'%}">다이어리</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'travel'%}">금융</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'list'%}">다이어리</a></li>
     </ul>
   </div>
   {% endif %}
